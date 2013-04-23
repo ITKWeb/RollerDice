@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ITK Roller Dice</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Secouez pour lancer les dés !</string>
+    
+    <string name="redDicesLabel">Dés rouges (attaque)</string>
+    <string name="greenDicesLabel">Dés verts (défense)</string>
+    
+    <string name="redDicesCount">1</string>
+    <string name="greenDicesCount">1</string>
+    <string name="xbox">Accel x:</string>
+
+    <string name="dicesThrowsCount">Nb de lancers</string>
+    
+</resources>

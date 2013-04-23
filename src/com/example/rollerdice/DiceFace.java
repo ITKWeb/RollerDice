@@ -1,4 +1,4 @@
-package com.example.rollerdicecuong;
+package com.example.rollerdice;
 
 import android.graphics.drawable.Drawable;
 
@@ -16,7 +16,7 @@ public class DiceFace {
 	}
 
 	public String getValue() {
-		return "Dé " + getDiceName() + " - " + getFaceName();
+		return "De " + getDiceName() + " - " + getFaceName();
 	}
 
 	

@@ -1,16 +1,16 @@
-package com.example.rollerdicecuong;
+package com.example.rollerdice;
 
 import android.graphics.drawable.Drawable;
 
-public class GreenDefenseDice extends Dice {
+public class RedAttackDice extends Dice {
 
 	
-	   public static String vals[] ={"miss", "miss", "miss", "evade", "evade", "evade","focus","focus" 
+	public static  String vals[] ={"miss", "miss", "hit", "hit", "hit", "critical","focus","focus" 
 	    };	
 	
 	
-	public GreenDefenseDice() {
-		super("Vert",  vals.length);
+	public RedAttackDice() {
+		super("Rouge", vals.length);
 	}
 	
 	@Override

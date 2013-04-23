@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- Accueil -->
+    
+    <!-- Texte dés rouges -->
+    <TextView
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="@string/redDicesLabel" />
+
+
+    <!-- Nombre de dés rouges -->
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignBaseline="@+id/EditText01"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_toRightOf="@+id/EditText01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="@string/redDicesCount" >
+
+        <requestFocus />
+    </EditText>
+    
+
+    <!-- Texte dés verts -->
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText01"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:text="@string/greenDicesLabel" />
+    
+    <!-- Nombre de dés verts -->
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_toRightOf="@+id/editText1"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="@string/greenDicesCount" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/TextViewRedThrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:text="@string/redDicesLabel" />
+
+    <TextView
+        android:id="@+id/TextViewGreenThrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewRedThrows"
+        android:layout_below="@+id/TextViewRedThrows"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:text="@string/greenDicesLabel" />
+
+    <TextView
+        android:id="@+id/TextViewThrowsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@+id/editText3"
+        android:ems="10"
+        android:text="@string/dicesThrowsCount" />
+
+    <TextView
+        android:id="@+id/textViewRedThrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewRedThrows"
+        android:layout_toRightOf="@+id/TextViewRedThrows"
+        android:text="..." />
+
+    <TextView
+        android:id="@+id/textViewGreenThrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewGreenThrows"
+        android:layout_alignLeft="@+id/textViewRedThrows"
+        android:text="..." />
+
+    <TextView
+        android:id="@+id/textViewThowsCountVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewThrowsCount"
+        android:layout_alignBottom="@+id/TextViewThrowsCount"
+        android:layout_toRightOf="@+id/TextViewThrowsCount"
+        android:text="..." />
+
+</RelativeLayout>

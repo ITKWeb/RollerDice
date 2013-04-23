@@ -1,4 +1,4 @@
-package com.example.rollerdicecuong;
+package com.example.rollerdice;
 
 import java.util.Date;
 import java.util.Random;
@@ -52,6 +52,7 @@ public abstract class Dice {
 		private Random random;
 		
 		private Randomizer(){
+			
 			random = new Random(new Date().getTime()); 
 		}
 		
